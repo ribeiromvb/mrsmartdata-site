@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -20,11 +21,14 @@ header {
   color: white;
   padding: 1rem 0;
 }
-header h1 {
-  display: inline;
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-nav {
-  float: right;
+header h1 {
+  font-size: 1.5rem;
 }
 nav a {
   color: white;
@@ -35,10 +39,19 @@ nav a {
   background: #e3f2fd;
   text-align: center;
   padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero h2 {
   font-size: 2.5rem;
+  margin-bottom: 1rem;
   color: #004b8d;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
 }
 .btn-primary {
   display: inline-block;
@@ -57,20 +70,32 @@ nav a {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: space-around;
+  justify-content: center;
+  margin-top: 2rem;
 }
 .service-item {
-  flex: 1;
-  min-width: 250px;
+  flex: 0 1 300px;
   background: #f1f1f1;
   padding: 1.5rem;
   border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 .contact {
   background: #002d5f;
   color: white;
   text-align: center;
   padding: 2rem 1rem;
+}
+.contact .container {
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+.contact a {
+  color: #80d8ff;
+  font-weight: bold;
+  text-decoration: underline;
 }
 footer {
   background: #001b33;
